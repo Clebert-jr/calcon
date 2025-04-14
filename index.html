@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/icon-calcon.svg" type="image/x-icon" />
+    <title>CalcOn | Calculadora Simples</title>
+  </head>
+  <body>
+    <div class="color-bg">
+      <header id="logo-header">
+        <img src="img/CalcOn.svg" alt="logo do site" />
+      </header>
+      <main id="main">
+        <div class="conteudo-main js-scroll">
+          <div class="conteudo-texto">
+            <h1 class="titulo">
+              Bem-vindo à <br />Calculadora Simples<span id="ponto">.</span>
+            </h1>
+            <p class="paragrafo">
+              Nossa calculadora online foi desenvolvida par a oferecer uma
+              experiência rápida, intuitiva e eficiente. Você pode realizar
+              operações básicas como adição, subtração, multiplicação e divisão
+              de forma prática, seja no computador ou no celular<span id="ponto"
+                >.</span
+              >
+            </p>
+            <a id="button" href="#calculadora" onclick="smooth()"
+              >Calcular Agora →</a
+            >
+          </div>
+          <div class="img-main">
+            <img src="img/Calculator.svg" alt="foto de calculadora" />
+          </div>
+        </div>
+      </main>
+      <section class="js-scroll" id="calculadora">
+        <div class="calculadora-class">
+          <h1>Calculadora Online</h1>
+          <input
+            type="text"
+            id="num1"
+            placeholder="Insira o primeiro número aqui"
+          />
+          <select name="operacao" id="operacao">
+            <option value="soma">Adição</option>
+            <option value="subtracao">Subtração</option>
+            <option value="divisao">Divisão</option>
+            <option value="multiplicacao">Multiplicação</option>
+          </select>
+          <input
+            type="text"
+            id="num2"
+            placeholder="Insira o segundo número aqui"
+          />
+          <button id="button" onclick="executar()">=</button>
+          <p id="res">Resultado:</p>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <img src="img/CalcOn.svg" alt="logo-site-footer" />
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+</html>
